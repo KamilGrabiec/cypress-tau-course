@@ -13,3 +13,7 @@ Cypress.Commands.add('addBoard', (input) => {
     .type(input + '{enter}');
 
 })
+
+Cypress.Commands.add('addTable', ()=>{
+  //do nothing
+})

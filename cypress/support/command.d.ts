@@ -4,14 +4,18 @@
 
 declare namespace Cypress {
   interface Chainable {
-
     /**
-     * Creates a new board via UI
-     *
+     * mAKE SURE this is my text
      * @example
      * cy
-     *   .addBoard('board name')
+     *  .mytext
      */
     addBoard()
+
+
+    /**
+     * but what it makes if not declared?
+     */
+    addTable()
   }
 }

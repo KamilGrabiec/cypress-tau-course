@@ -1,20 +1,33 @@
 /// <reference types="cypress" />
 
-beforeEach(() => {
-  cy.request('POST', '/api/reset')
+// beforeEach(() => {
+//   cy.request('POST', '/api/reset')
+// })
+
+Cypress.Commands.add('take', {prevSubject: 'optional'}, (subject, input) =>{
+
+  if (subject){
+    cy
+      .wrap(subject)
+      .find(`[data-cy=${input}]`)
+  }else {
+  cy
+    .get(`[data-cy=${input}]`)
+  }
+
 })
 
 it('Custom commands', () => {
 
   cy
-    .visit('/');
+    .visit('/board/69411047945');
+
+  // cy
+  //   .addBoard('board name')
 
   cy
-    .get('[data-cy="create-board"]')
-    .click();
-
-  cy
-    .get('[data-cy=new-board-input]')
-    .type('new board{enter}');
+    .take('list')
+    .eq(0)
+    .take('task')
 
 });

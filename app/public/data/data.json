@@ -1,6 +1,48 @@
 {
-  "boards": [],
-  "tasks": [],
+  "boards": [
+    {
+      "name": "board ",
+      "user": 0,
+      "id": 69411047945,
+      "starred": false,
+      "created": "2022-11-15"
+    }
+  ],
+  "tasks": [
+    {
+      "boardId": 69411047945,
+      "description": "",
+      "completed": false,
+      "listId": 68877687727,
+      "title": "task 1",
+      "id": 12136224825,
+      "created": "2022-11-15",
+      "deadline": "2022-11-18"
+    },
+    {
+      "boardId": 69411047945,
+      "description": "",
+      "completed": false,
+      "listId": 68409291821,
+      "title": "task 2",
+      "id": 41082060611,
+      "created": "2022-11-15",
+      "deadline": "2022-11-18"
+    }
+  ],
   "users": [],
-  "lists": []
+  "lists": [
+    {
+      "boardId": 69411047945,
+      "title": "to do",
+      "id": 68877687727,
+      "created": "2022-11-15"
+    },
+    {
+      "boardId": 69411047945,
+      "title": "active",
+      "id": 68409291821,
+      "created": "2022-11-15"
+    }
+  ]
 }
