@@ -2,6 +2,8 @@
 
 describe('Cookies', () => {
 
+
+
   beforeEach(() => {
 
     cy
@@ -9,7 +11,7 @@ describe('Cookies', () => {
 
   })
 
-  it.only('test #1', () => {
+  it('test #1', () => {
 
     cy
       .get('[data-cy="login-menu"]')
